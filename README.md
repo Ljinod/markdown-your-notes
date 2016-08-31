@@ -9,6 +9,7 @@ under several formats: Markdown, HTML, and PDF.
 **NOTE**: I am doing this application on my spare time and it should **not** be
 considered as an official Cozy application.
 
+\\
 
 ## Roadmap
 
