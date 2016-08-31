@@ -1,0 +1,24 @@
+{
+  "name": "markdown-your-notes",
+  "version": "0.0.1",
+  "description": "A note taking application for Cozy powered by markdown syntax.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ljinod/markdown-your-notes.git"
+  },
+  "keywords": [
+    "Cozy",
+    "Notes",
+    "Markdown"
+  ],
+  "author": "Julien (Ljinod)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Ljinod/markdown-your-notes/issues"
+  },
+  "homepage": "https://github.com/Ljinod/markdown-your-notes#readme"
+}
