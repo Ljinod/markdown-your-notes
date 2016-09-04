@@ -19,5 +19,10 @@ module.exports = {
                 loader : 'babel-loader'
             }
         ]
+    },
+
+    babel: {
+        presets: ['es2015'],
+        plugins: ['transform-runtime']
     }
 }
