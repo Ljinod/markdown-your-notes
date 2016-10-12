@@ -1,16 +1,34 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-new Vue({
 
-    el: 'body',
+Vue.use(VueRouter)
 
-    data: {
-        message: "Hello world!"
-    },
 
-    created: function() {
-        console.log(this.message);
+import App from './App.vue'
+
+
+const router = new VueRouter({
+    mode: 'history'
+
+    , routes: [{
+        path        : '/'
+        , component : require('./components/Home.vue')
+        , name      : 'home'
     }
-
+    , {
+        path        : '/note/:noteid?'
+        , component : require('./components/Note.vue')
+        , name      : 'note'
+    }
+    , {
+        path: '*'
+        , redirect: '/'
+    }]
 })
 
+new Vue({
+  el: '#app'
+  , router
+  , render: h => h(App)
+})
