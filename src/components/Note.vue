@@ -14,8 +14,6 @@
 
 <style lang="css">
 .noteholder {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center space-around;
@@ -24,13 +22,13 @@
 }
 
 .noteTextarea {
-    height: 75vh;
-    width: 40vw;
+    height: 80%;
+    width: 40%;
 }
 
 .noteRenderedHtml {
-    height: 75vh;
-    width: 40vw;
+    height: 80%;
+    width: 40%;
 }
 </style>
 

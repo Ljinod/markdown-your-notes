@@ -1,10 +1,12 @@
 <template>
-  <div id="app" class="mainholder">
+  <div id="app" class="appcontainer">
 
-      <menu-bar></menu-bar>
-      <navigation-bar></navigation-bar>
+      <menu-bar class="menucontainer"></menu-bar>
 
-      <router-view></router-view>
+      <div class="navroutercontainer">
+          <navigation-bar class="navcontainer"></navigation-bar>
+          <router-view class="routercontainer"></router-view>
+      </div>
 
   </div>
 </template>
@@ -30,8 +32,33 @@ export default {
 </script>
 
 <style>
-.mainholder {
+.appcontainer {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    flex-wrap: nowrap;
 }
+
+.menucontainer {
+    width: 15vw;
+    height: 100vh;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.navroutercontainer {
+    width: 85vw;
+    height: 100vh;
+}
+
+.navcontainer {
+    width: inherit;
+    height: 7%;
+}
+
+.routercontainer {
+    width: inherit;
+    height: 93%;
+}
+
+
 </style>
